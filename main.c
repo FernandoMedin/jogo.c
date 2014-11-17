@@ -5,6 +5,8 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
+#include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_acodec.h>
 
 const int LARGURA_TELA = 800;
 const int ALTURA_TELA = 600;
@@ -22,6 +24,8 @@ int main(void){
 	ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_br = NULL;
 	ALLEGRO_EVENT_QUEUE *fila_eventos = NULL;
 	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra = NULL, *sombra_folha = NULL;
+	ALLEGRO_AUDIO_STREAM *musica = NULL;
+	ALLEGRO_SAMPLE *sample = NULL;
 	int sair = 0, teste = 0, jogar = 0, opcoes = 0;
 
 	// Inicializa a Allegro
@@ -31,6 +35,9 @@ int main(void){
 	al_init_image_addon();
 	al_install_mouse();
 	al_set_system_mouse_cursor(janela, ALLEGRO_SYSTEM_MOUSE_CURSOR_DEFAULT);
+	al_install_audio();
+	al_init_acodec_addon();
+	al_reserve_samples(1);
 
 	// Configura a janela / Eventos
 	janela = al_create_display(LARGURA_TELA, ALTURA_TELA);
@@ -53,14 +60,20 @@ int main(void){
 	sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
 	folha = al_load_bitmap("imagens/folha_lindinha.png");
 
+	//Carrega Sons
+	musica = al_load_audio_stream("som/The_Builder.ogg", 4, 1024);
+
 	// Desenhar abertura do Jogo
+    al_attach_audio_stream_to_mixer(musica, al_get_default_mixer());
+    al_set_audio_stream_playing(musica, true);
 	fadein(abertura, 1);
 	al_draw_bitmap(abertura, 0, 0, 0);
 	al_flip_display();
 	fadeout(2);
 
-	//Falar que os eventos vão vir do Mouse
+	//Falar que os eventos vão vir do Mouse e janela
 	al_register_event_source(fila_eventos, al_get_mouse_event_source());
+    al_register_event_source(fila_eventos, al_get_display_event_source(janela));
 
 	while(sair == 0){
 
