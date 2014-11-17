@@ -3,6 +3,9 @@ jogo.c
 
 Jogo educativo para faculdade em C.
 
+=====
+
+
 Criado por:
 
 Alex Shun Yamazaki
