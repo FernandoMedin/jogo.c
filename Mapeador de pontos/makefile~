@@ -1,2 +1,0 @@
-all:
-	gcc ddts.c -o teste -lallegro_image -lallegro 	
