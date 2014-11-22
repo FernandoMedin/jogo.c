@@ -7,6 +7,8 @@
 #include <time.h>
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
 
 const int LARGURA_TELA = 800;
 const int ALTURA_TELA = 600;
