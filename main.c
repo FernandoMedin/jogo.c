@@ -64,6 +64,7 @@ int main(void){
 
 	//Carrega Sons
 	musica = al_load_audio_stream("som/The_Builder.ogg", 4, 1024);
+	sample = al_load_sample("som/click.wav");
 
 	// Desenhar abertura do Jogo
     al_attach_audio_stream_to_mixer(musica, al_get_default_mixer());
@@ -98,6 +99,10 @@ int main(void){
 		al_wait_for_event(fila_eventos, &evento);
 
 		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
+			al_play_sample(sample, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+		}
+
+		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
 
 			if(evento.mouse.x >= 30 &&
 					evento.mouse.x <= 330 && 
@@ -106,7 +111,7 @@ int main(void){
 
 				al_draw_bitmap(botao_sair_press, 30, 420, 0);
 				al_flip_display();
-				al_rest(0.15);
+				al_rest(0.05);
 				sair = 1;
 			}
 
@@ -117,7 +122,7 @@ int main(void){
 
 				al_draw_bitmap(botao_opcoes_press, 30, 220, 0);
 				al_flip_display();
-				al_rest(0.15);
+				al_rest(0.05);
 			}
 
 			else if(evento.mouse.x >= 30 &&
@@ -127,7 +132,7 @@ int main(void){
 
 				al_draw_bitmap(botao_jogar_press, 30, 20, 0);
 				al_flip_display();
-				al_rest(0.15);
+				al_rest(0.05);
 				jogar = 1;
 				if(jogar == 1)
 					jogaar(); 	
