@@ -28,7 +28,7 @@ int main(void){
 	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra = NULL, *sombra_folha = NULL;
 	ALLEGRO_AUDIO_STREAM *musica = NULL;
 	ALLEGRO_SAMPLE *sample = NULL;
-	int sair = 0, teste = 0, jogar = 0, opcoes = 0;
+	int sair = 0, teste = 0, jogar = 0, opcoes = 0, i=0;
 
 	// Inicializa a Allegro
 	al_init();
@@ -78,10 +78,11 @@ int main(void){
 	al_register_event_source(fila_eventos, al_get_mouse_event_source());
     al_register_event_source(fila_eventos, al_get_display_event_source(janela));
 
-	while(sair == 0){
 
+	while(sair == 0){
 		ALLEGRO_EVENT evento;
 
+		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_UP || i==0){
 		al_draw_bitmap(imagem, 0, 0, 0);
 		al_draw_bitmap(sombra, 20, 430, 0);
 		al_draw_bitmap(botao_sair, 30, 420, 0);
@@ -94,13 +95,16 @@ int main(void){
 		al_draw_bitmap(folha, 370, 420, 0);
 		al_draw_bitmap(tax_1, 380, 400, 0);
 		al_draw_bitmap(tax_1, 730, 400, 0);
-
 		al_flip_display();
-		al_wait_for_event(fila_eventos, &evento);
-
-		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
-			al_play_sample(sample, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+		i=1;
 		}
+		al_wait_for_event(fila_eventos, &evento);
+		al_flip_display();
+
+
+		//if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
+			//al_play_sample(sample, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+		//}
 
 		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
 
@@ -111,7 +115,6 @@ int main(void){
 
 				al_draw_bitmap(botao_sair_press, 30, 420, 0);
 				al_flip_display();
-				al_rest(0.05);
 				sair = 1;
 			}
 
@@ -122,7 +125,6 @@ int main(void){
 
 				al_draw_bitmap(botao_opcoes_press, 30, 220, 0);
 				al_flip_display();
-				al_rest(0.05);
 			}
 
 			else if(evento.mouse.x >= 30 &&
@@ -132,23 +134,26 @@ int main(void){
 
 				al_draw_bitmap(botao_jogar_press, 30, 20, 0);
 				al_flip_display();
-				al_rest(0.05);
 				jogar = 1;
+				printf("vaiabrir\n");
 				if(jogar == 1)
 					jogaar(); 	
 			}
 		}
+
 	}
-	// Finaliza a janela
-	al_destroy_bitmap(imagem);	
-	al_destroy_bitmap(botao_jogar);	
-	al_destroy_bitmap(botao_opcoes);	
-	al_destroy_bitmap(botao_sair);	
-	al_destroy_bitmap(abertura);
+
+	al_destroy_bitmap(sombra);
+	al_destroy_bitmap(botao_sair);
+	al_destroy_bitmap(botao_opcoes);
+	al_destroy_bitmap(botao_jogar);
+	al_destroy_bitmap(logo);
+	al_destroy_bitmap(sombra_folha);
 	al_destroy_bitmap(folha);
 	al_destroy_bitmap(tax_1);
-	al_destroy_display(janela);
-	al_destroy_event_queue(fila_eventos);
+	al_destroy_bitmap(imagem);
+
+	// Finaliza a janela
 	return 0;
 }
 
