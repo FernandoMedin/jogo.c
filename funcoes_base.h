@@ -375,7 +375,7 @@ void jogaar(){
       resposta = 100;
       flag=1;
     }
-    while(resposta==1){
+    if(resposta==1){
       al_draw_bitmap(ac, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -383,7 +383,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ac);
     }
-    while(resposta==2){
+    if(resposta==2){
       al_draw_bitmap(al, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -391,7 +391,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(al);
     }
-    while(resposta==3){
+    if(resposta==3){
       al_draw_bitmap(am, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -399,7 +399,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(am);
     }
-    while(resposta==4){
+    if(resposta==4){
       al_draw_bitmap(ap, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -407,14 +407,14 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ap);
     }
-    while(resposta==5){
+    if(resposta==5){
       al_draw_bitmap(ba, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
     }
-    while(resposta==6){
+    if(resposta==6){
       al_draw_bitmap(ce, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -422,7 +422,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ce);
     }
-    while(resposta==7){
+    if(resposta==7){
       al_draw_bitmap(df, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -430,7 +430,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(df);
     }
-    while(resposta==8){
+    if(resposta==8){
       al_draw_bitmap(es, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -438,7 +438,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(es);
     }
-    while(resposta==9){
+    if(resposta==9){
       al_draw_bitmap(go, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -446,7 +446,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(go);
     }
-    while(resposta==10){
+    if(resposta==10){
       al_draw_bitmap(ma, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -454,7 +454,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ma);
     }
-    while(resposta==11){
+    if(resposta==11){
       al_draw_bitmap(mg, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -462,7 +462,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(mg);
     }
-    while(resposta==12){
+    if(resposta==12){
       al_draw_bitmap(ms, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -470,7 +470,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ms);
     }
-    while(resposta==13){
+    if(resposta==13){
       al_draw_bitmap(mt, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -478,7 +478,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(mt);
     }
-    while(resposta==14){
+    if(resposta==14){
       al_draw_bitmap(pr, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -487,7 +487,7 @@ void jogaar(){
       al_destroy_bitmap(pr);
     }
 
-     while(resposta==15){
+     if(resposta==15){
       al_draw_bitmap(pb, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -497,7 +497,7 @@ void jogaar(){
     }
 
 
-    while(resposta==16){
+    if(resposta==16){
       al_draw_bitmap(pe, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -505,7 +505,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(pe);
     }
-    while(resposta==17){
+    if(resposta==17){
       al_draw_bitmap(pi, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -513,7 +513,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(pi);
     }
-    while(resposta==18){
+    if(resposta==18){
       al_draw_bitmap(pa, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -522,7 +522,7 @@ void jogaar(){
       al_destroy_bitmap(pa);
     }
 
-    while(resposta==19){
+    if(resposta==19){
       al_draw_bitmap(rj, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -530,7 +530,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(rj);
     }
-    while(resposta==20){
+    if(resposta==20){
       al_draw_bitmap(rn, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -538,7 +538,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(rn);
     }
-    while(resposta==21){
+    if(resposta==21){
       al_draw_bitmap(ro, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -546,7 +546,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(ro);
     }
-    while(resposta==22){
+    if(resposta==22){
       al_draw_bitmap(rr, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -554,7 +554,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(rr);
     }
-    while(resposta==23){
+    if(resposta==23){
       al_draw_bitmap(rs, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -562,7 +562,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(rs);
     }
-    while(resposta==24){
+    if(resposta==24){
       al_draw_bitmap(sc, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -570,7 +570,7 @@ void jogaar(){
       resposta=-1;
       al_destroy_bitmap(sc);
     }
-    while(resposta==25){
+    if(resposta==25){
       al_draw_bitmap(se, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -578,7 +578,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(se);
     }
-    while(resposta==26){
+    if(resposta==26){
       al_draw_bitmap(sp, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -586,7 +586,7 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(sp);
     }
-    while(resposta==27){
+    if(resposta==27){
       al_draw_bitmap(to, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
