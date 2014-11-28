@@ -436,7 +436,7 @@ void jogaar(){
       al_destroy_bitmap(df);
     }
     if(resposta==8){
-      al_draw_bitmap(es, 0, 0, 0);
+      al_draw_bitmap(es, 0 a, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
@@ -451,7 +451,6 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(go);
     }
-    if(resposta==10){
       al_draw_bitmap(ma, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
