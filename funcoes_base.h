@@ -436,7 +436,7 @@ void jogaar(){
       al_destroy_bitmap(df);
     }
     if(resposta==8){
-      al_draw_bitmap(es, 0 a, 0, 0);
+      al_draw_bitmap(es, 0 , 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
@@ -598,14 +598,5 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(to);
     }
-    
-    
-  }
-  printf("finalizou função\n");
-  al_destroy_bitmap(mapa_br);
-  al_destroy_bitmap(fundo_jogo);
-  fila_eventos=NULL;
-  return;
-
 }
 
