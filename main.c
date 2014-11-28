@@ -28,6 +28,7 @@ int main(void){
 	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra = NULL, *sombra_folha = NULL;
 	ALLEGRO_AUDIO_STREAM *musica = NULL;
 	ALLEGRO_SAMPLE *sample = NULL;
+	ALLEGRO_FONT *font = NULL;
 	int sair = 0, teste = 0, jogar = 0, opcoes = 0, i=0;
 
 	// Inicializa a Allegro
@@ -40,10 +41,12 @@ int main(void){
 	al_install_audio();
 	al_init_acodec_addon();
 	al_reserve_samples(1);
+	al_init_font_addon();
 
-	// Configura a janela / Eventos
+	// Configura a janela / Eventos / fonte
 	janela = al_create_display(LARGURA_TELA, ALTURA_TELA);
 	fila_eventos = al_create_event_queue();
+	font = al_load_font("fonts/SchoolNotes.ttf", 48, 0);
 
 	// Carrega a imagem
 	imagem = al_load_bitmap("imagens/fundo_jogo.png");
