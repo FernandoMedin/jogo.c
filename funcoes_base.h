@@ -221,7 +221,7 @@ int brasil(int x,int y,int estado)
 
 void jogaar(){
 	printf("abriu\n");
-  int flag = 0,x,y,estado=0, resposta=-1,i=0,lixo=NULL;
+  int flag = 0,x,y,estado=0, resposta=-1,i=0,lixo=NULL, score=0;
   ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_br = NULL, *rs = NULL;
   ALLEGRO_BITMAP *ac=NULL, *al=NULL, *am=NULL, *ap=NULL, *ba=NULL, *ce=NULL, *df=NULL, *es=NULL, *go= NULL, *ma=NULL, *mg=NULL, *ms=NULL, *mt=NULL, *pa=NULL, *pb=NULL, *pe=NULL;
   ALLEGRO_BITMAP *pi=NULL, *pr=NULL, *rj=NULL, *rn=NULL, *ro=NULL, *rr=NULL, *sc=NULL, *se=NULL, *sp=NULL, *to=NULL; 
@@ -368,12 +368,17 @@ void jogaar(){
 
     }
     if(resposta == estado){
-      printf("ganhou\n");
+      printf("acertou\n");
+    	score++;
+      	if(score==5){
+      		break;
+      	}
     }
     if(resposta != estado && resposta != -1){
       printf("perdeu\n");
       resposta = 100;
       flag=1;
+
     }
     if(resposta==1){
       al_draw_bitmap(ac, 0, 0, 0);
@@ -594,7 +599,6 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(to);
     }
-    lixo = ALLEGRO_EVENT_MOUSE_BUTTON_DOWN;
     
     
   }
