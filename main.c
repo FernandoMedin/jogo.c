@@ -40,11 +40,8 @@ int main(void){
 	al_install_audio();
 	al_init_acodec_addon();
 	al_reserve_samples(1);
-<<<<<<< HEAD
 	al_init_font_addon();
 	al_init_ttf_addon();
-=======
->>>>>>> 6909520b47413fe0356200cde8fffbbb1af1e592
 
 	// Configura a janela / Eventos
 	janela = al_create_display(LARGURA_TELA, ALTURA_TELA);
