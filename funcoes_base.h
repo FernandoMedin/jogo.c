@@ -702,7 +702,7 @@ void jogaar(){
 				al_draw_textf(font, al_map_rgb(0, 0, 0), 490, 450, 0, "%d Ponto", score);
 			}else{
 				al_draw_textf(font, al_map_rgb(0, 0, 0), 490, 450, 0, "%d Pontos", score);
-			}
+				}
 			switch(estado){
 				case 1:
 					printf("Acre\n");
@@ -713,8 +713,8 @@ void jogaar(){
 					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Alagoas");
 					break;
 				case 3:
-					printf("Amazonia\n");
-					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Amazonia");
+					printf("Amazonas\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Amazonas");
 					break;
 				case 4:
 					printf("Amapa\n");
