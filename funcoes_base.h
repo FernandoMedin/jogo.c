@@ -642,8 +642,15 @@ void jogaar(){
 	ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_br = NULL, *rs = NULL;
 	ALLEGRO_BITMAP *ac=NULL, *al=NULL, *am=NULL, *ap=NULL, *ba=NULL, *ce=NULL, *df=NULL, *es=NULL, *go= NULL, *ma=NULL, *mg=NULL, *ms=NULL, *mt=NULL, *pa=NULL, *pb=NULL, *pe=NULL;
 	ALLEGRO_BITMAP *pi=NULL, *pr=NULL, *rj=NULL, *rn=NULL, *ro=NULL, *rr=NULL, *sc=NULL, *se=NULL, *sp=NULL, *to=NULL; 
+	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra_folha = NULL;
+
 	fundo_jogo = al_load_bitmap("imagens/fundo_jogo.png");
 	mapa_br = al_load_bitmap("imagens/mapa_br.png");
+	
+	tax_1 = al_load_bitmap("imagens/tachinha2.png");
+	sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
+	folha = al_load_bitmap("imagens/folha_lindinha.png");
+
 	ac = al_load_bitmap("imagens/mapa_br_ac.png");
 	al = al_load_bitmap("imagens/mapa_br_al.png");
 	am = al_load_bitmap("imagens/mapa_br_am.png");
@@ -672,7 +679,6 @@ void jogaar(){
 	sp = al_load_bitmap("imagens/mapa_br_sp.png");
 	to = al_load_bitmap("imagens/mapa_br_to.png");
 
-
 	ALLEGRO_EVENT evento;
 	ALLEGRO_EVENT_QUEUE *fila_eventos = NULL;
 	fila_eventos = al_create_event_queue();
@@ -683,6 +689,10 @@ void jogaar(){
 		if(ALLEGRO_EVENT_MOUSE_BUTTON_UP){
 			al_draw_bitmap(fundo_jogo, 0, 0, 0);
 			al_draw_bitmap(mapa_br, 0, 0, 0);
+			al_draw_bitmap(sombra_folha, 395, 445, 0);
+			al_draw_bitmap(folha, 400, 450, 0);
+			al_draw_bitmap(tax_1, 410, 420, 0);
+			al_draw_bitmap(tax_1, 760, 420, 0);
 			al_flip_display();
 		}
 		al_wait_for_event(fila_eventos, &evento);
