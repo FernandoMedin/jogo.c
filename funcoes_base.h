@@ -854,9 +854,14 @@ void jogaar(){
       resposta=-1;
       i=0;
     }
+<<<<<<< HEAD
     while(resposta==8){
       al_draw_bitmap(fundo_jogo, 0, 0, 0);
       al_draw_bitmap(es, 0, 0, 0);
+=======
+    if(resposta==8){
+      al_draw_bitmap(es, 0 , 0, 0);
+>>>>>>> 51ec64fbb90e36b75b9bfb99ab2e25b5ab85aa19
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
@@ -1017,6 +1022,7 @@ void jogaar(){
       resposta=-1;
       i=0;
     }
+<<<<<<< HEAD
     
     
   }
@@ -1028,5 +1034,7 @@ void jogaar(){
   }
   return;
 
+=======
+>>>>>>> 51ec64fbb90e36b75b9bfb99ab2e25b5ab85aa19
 }
 

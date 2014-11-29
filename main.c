@@ -83,20 +83,20 @@ int main(void){
 		ALLEGRO_EVENT evento;
 
 		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_UP || i==0){
-		al_draw_bitmap(imagem, 0, 0, 0);
-		al_draw_bitmap(sombra, 20, 430, 0);
-		al_draw_bitmap(botao_sair, 30, 420, 0);
-		al_draw_bitmap(sombra, 20, 230, 0);
-		al_draw_bitmap(botao_opcoes, 30, 220, 0);
-		al_draw_bitmap(sombra, 20, 30, 0);
-		al_draw_bitmap(botao_jogar, 30, 20, 0);
-		al_draw_bitmap(logo, -20, 25, 0);
-		al_draw_bitmap(sombra_folha, 365, 425, 0);
-		al_draw_bitmap(folha, 370, 420, 0);
-		al_draw_bitmap(tax_1, 380, 400, 0);
-		al_draw_bitmap(tax_1, 730, 400, 0);
-		al_flip_display();
-		i=1;
+			al_draw_bitmap(imagem, 0, 0, 0);
+			al_draw_bitmap(sombra, 20, 430, 0);
+			al_draw_bitmap(botao_sair, 30, 420, 0);
+			al_draw_bitmap(sombra, 20, 230, 0);
+			al_draw_bitmap(botao_opcoes, 30, 220, 0);
+			al_draw_bitmap(sombra, 20, 30, 0);
+			al_draw_bitmap(botao_jogar, 30, 20, 0);
+			al_draw_bitmap(logo, -20, 25, 0);
+			al_draw_bitmap(sombra_folha, 365, 425, 0);
+			al_draw_bitmap(folha, 370, 420, 0);
+			al_draw_bitmap(tax_1, 380, 400, 0);
+			al_draw_bitmap(tax_1, 730, 400, 0);
+			al_flip_display();
+			i=1;
 		}
 		al_wait_for_event(fila_eventos, &evento);
 		al_flip_display();
