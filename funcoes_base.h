@@ -1,4 +1,7 @@
-﻿int randompoint()
+﻿#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
+
+int randompoint()
 {
 	time_t t;
 	srand((unsigned) time(&t));
@@ -643,6 +646,7 @@ void jogaar(){
 	ALLEGRO_BITMAP *ac=NULL, *al=NULL, *am=NULL, *ap=NULL, *ba=NULL, *ce=NULL, *df=NULL, *es=NULL, *go= NULL, *ma=NULL, *mg=NULL, *ms=NULL, *mt=NULL, *pa=NULL, *pb=NULL, *pe=NULL;
 	ALLEGRO_BITMAP *pi=NULL, *pr=NULL, *rj=NULL, *rn=NULL, *ro=NULL, *rr=NULL, *sc=NULL, *se=NULL, *sp=NULL, *to=NULL; 
 	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra_folha = NULL;
+	ALLEGRO_FONT *font = NULL;
 
 	fundo_jogo = al_load_bitmap("imagens/fundo_jogo.png");
 	mapa_br = al_load_bitmap("imagens/mapa_br.png");
@@ -650,6 +654,7 @@ void jogaar(){
 	tax_1 = al_load_bitmap("imagens/tachinha2.png");
 	sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
 	folha = al_load_bitmap("imagens/folha_lindinha.png");
+	font = al_load_font("fonts/SchoolNotes.ttf", 70, 0);
 
 	ac = al_load_bitmap("imagens/mapa_br_ac.png");
 	al = al_load_bitmap("imagens/mapa_br_al.png");
@@ -693,97 +698,129 @@ void jogaar(){
 			al_draw_bitmap(folha, 400, 450, 0);
 			al_draw_bitmap(tax_1, 410, 420, 0);
 			al_draw_bitmap(tax_1, 760, 420, 0);
+			if(score < 2){
+				al_draw_textf(font, al_map_rgb(0, 0, 0), 490, 450, 0, "%d Ponto", score);
+			}else{
+				al_draw_textf(font, al_map_rgb(0, 0, 0), 490, 450, 0, "%d Pontos", score);
+			}
+			switch(estado){
+				case 1:
+					printf("Acre\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Acre");
+					break;
+				case 2:
+					printf("Alagoas\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Alagoas");
+					break;
+				case 3:
+					printf("Amazonia\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Amazonia");
+					break;
+				case 4:
+					printf("Amapa\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Amapa");
+					break;
+				case 5:
+					printf("Bahia\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Bahia");
+					break;
+				case 6:
+					printf("Ceara\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Ceara");
+					break;
+				case 7:
+					printf("Distrito Federal\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Distrito Federal");
+					break;
+				case 8:
+					printf("Espirito Santo\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Espirito Santo");
+					break;
+				case 9:
+					printf("Goias\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Goias");
+					break;
+				case 10:
+					printf("Maranhao\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Maranhao");
+					break;
+				case 11:
+					printf("Minas Gerais\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Minas Gerais");
+					break;
+				case 12:
+					printf("Mato Grosso do Sul\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Mato Grosso do Sul");
+					break;
+				case 13:
+					printf("Mato Grosso\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Mato Grosso");
+					break;
+				case 14:
+					printf("Parana\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Parana");
+					break;
+				case 15:
+					printf("Paraiba\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Paraiba");
+					break;
+				case 16:
+					printf("Pernambuco\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Pernambuco");
+					break;
+				case 17:
+					printf("Piaui\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Piaui");
+					break;
+				case 18:
+					printf("Para\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Para");
+					break;
+				case 19:
+					printf("Rio de Janeiro\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Rio de Janeiro");
+					break;
+				case 20:
+					printf("Rio Grande do Norte\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Rio Grande do Norte");
+					break;
+				case 21:
+					printf("Rondonia\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Rondonia");
+					break;
+				case 22:
+					printf("Roraima\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Roraima");
+					break;
+				case 23:
+					printf("Rio Grande do Sul\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Rio Grande do Sul");
+					break;
+				case 24:
+					printf("Santa Catarina\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Santa Catarina");
+					break;
+				case 25:
+					printf("Sergipe\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Sergipe");
+					break;
+				case 26:
+					printf("Sao Paulo\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Sao Paulo");
+					break;
+				case 27:
+					printf("Tocantins\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Tocantins");
+					break;
+			}
 			al_flip_display();
+			printf("%d\n", estado);
 		}
 		al_wait_for_event(fila_eventos, &evento);
 		if(i==0){
 			estado = randompoint();
 			i=1;
 		}
-		switch(estado){
-			case 1:
-				printf("Acre\n");
-				break;
-			case 2:
-				printf("Alagoas\n");
-				break;
-			case 3:
-				printf("Amazonia\n");
-				break;
-			case 4:
-				printf("Amapa\n");
-				break;
-			case 5:
-				printf("Bahia\n");
-				break;
-			case 6:
-				printf("Ceara\n");
-				break;
-			case 7:
-				printf("Distrito Federal\n");
-				break;
-			case 8:
-				printf("Espirito Santo\n");
-				break;
-			case 9:
-				printf("Goias\n");
-				break;
-			case 10:
-				printf("Maranhao\n");
-				break;
-			case 11:
-				printf("Minas Gerais\n");
-				break;
-			case 12:
-				printf("Mato Grosso do Sul\n");
-				break;
-			case 13:
-				printf("Mato Grosso\n");
-				break;
-			case 14:
-				printf("Parana\n");
-				break;
-			case 15:
-				printf("Paraiba\n");
-				break;
-			case 16:
-				printf("Pernambuco\n");
-				break;
-			case 17:
-				printf("Piaui\n");
-				break;
-			case 18:
-				printf("Para\n");
-				break;
-			case 19:
-				printf("Rio de Janeiro\n");
-				break;
-			case 20:
-				printf("Rio Grande do Norte\n");
-				break;
-			case 21:
-				printf("Rondonia\n");
-				break;
-			case 22:
-				printf("Roraima\n");
-				break;
-			case 23:
-				printf("Rio Grande do Sul\n");
-				break;
-			case 24:
-				printf("Santa Catarina\n");
-				break;
-			case 25:
-				printf("Sergipe\n");
-				break;
-			case 26:
-				printf("Sao Paulo\n");
-				break;
-			case 27:
-				printf("Tocantins\n");
-				break;
-		}
-		printf("%d\n", estado);
 
 		if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
 			printf("clicou\n");
