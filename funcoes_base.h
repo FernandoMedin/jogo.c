@@ -219,6 +219,424 @@ int brasil(int x,int y,int estado)
 	}
 }
 
+
+void bairros(){
+	printf("abriu\n");
+  int flag = 0,x,y,bairros=0, resposta=-1,i=0,lixo=NULL, score=0;
+  ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_sp = NULL, *an = NULL;
+  ALLEGRO_BITMAP *ar=NULL, *bu=NULL, *ca=NULL, *cv=NULL, *cij=NULL, *cit=NULL, *er=NULL, *fr=NULL, *gu=NULL, *ip= NULL, *it=NULL, *ita=NULL, *ja=NULL, *la=NULL, *mb=NULL, *mo=NULL, *pa=NULL;
+  ALLEGRO_BITMAP *pe=NULL, *pi=NULL, *pir=NULL, *sa=NULL, *saa=NULL, *sm=NULL, *smi=NULL, *se=NULL, *so=NULL, *tr=NULL, *vi=NULL, *vim=NULL, *vip=NULL; 
+  fundo_jogo = al_load_bitmap("imagens/fundo_jogo.png");
+  mapa_sp = al_load_bitmap("imagens/mapasp.png");
+  an = al_load_bitmap("imagens/mapasp_anhanguera.png");
+  ar = al_load_bitmap("imagens/mapasp_aricanduva.png");
+  bu = al_load_bitmap("imagens/mapasp_butanta.png");
+  ca = al_load_bitmap("imagens/mapasp_cidadejardim.png");
+  cv = al_load_bitmap("imagens/mapasp_casaverde.png");
+  cij = al_load_bitmap("imagens/mapasp_cidadejardim.png");
+  cit = al_load_bitmap("imagens/mapasp_tiradentes.png");
+  er = al_load_bitmap("imagens/mapasp_ermelindomatarazzo.png");
+  fr = al_load_bitmap("imagens/mapasp_freguesiadoo.png");
+  gu = al_load_bitmap("imagens/mapasp_guaianazes.png");
+  ip = al_load_bitmap("imagens/mapasp_ipiranga.png");
+  it = al_load_bitmap("imagens/mapasp_itaim.png");
+  ita = al_load_bitmap("imagens/mapasp_itaquera.png");
+  ja = al_load_bitmap("imagens/mapasp_jabaquara.png");
+  la = al_load_bitmap("imagens/mapasp_lapa.png");
+  mb = al_load_bitmap("imagens/mapasp_mboymirim.png");
+  mo = al_load_bitmap("imagens/mapasp_mooca.png");
+  pa = al_load_bitmap("imagens/mapasp_parelheiros.png");
+  pe = al_load_bitmap("imagens/mapasp_penha.png");
+  pi = al_load_bitmap("imagens/mapasp_pinheiros.png");
+  pir = al_load_bitmap("imagens/mapasp_pirituba.png");
+  sa = al_load_bitmap("imagens/mapasp_santana.png");
+  saa = al_load_bitmap("imagens/mapasp_santoamaro.png");
+  sm = al_load_bitmap("imagens/mapasp_saomateus.png");
+  smi = al_load_bitmap("imagens/mapasp_saomiguel.png");
+  se = al_load_bitmap("imagens/mapasp_se.png");
+  so = al_load_bitmap("imagens/mapasp_socorro.png");
+  tr = al_load_bitmap("imagens/mapasp_tremebe.png");
+  vi = al_load_bitmap("imagens/mapasp_vilamaria.png");
+  vim = al_load_bitmap("imagens/mapasp_vilamariana.png");
+  vip = al_load_bitmap("imagens/mapasp_vilaprudente.png");
+
+  ALLEGRO_EVENT evento;
+  ALLEGRO_EVENT_QUEUE *fila_eventos = NULL;
+  fila_eventos = al_create_event_queue();
+  al_register_event_source(fila_eventos, al_get_mouse_event_source());
+
+
+  	while(flag == 0){
+    if(ALLEGRO_EVENT_MOUSE_BUTTON_UP){
+    al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    al_draw_bitmap(mapa_sp, 0, 0, 0);
+    al_flip_display();
+	}
+	al_wait_for_event(fila_eventos, &evento);
+    if(i==0){
+      bairros = randompoint();
+      i=1;
+    }
+    switch(bairros){
+        case 1:
+          printf("Acre\n");
+          break;
+        case 2:
+          printf("Alagoas\n");
+          break;
+        case 3:
+          printf("Amazonia\n");
+          break;
+        case 4:
+          printf("Amapa\n");
+          break;
+        case 5:
+          printf("Bahia\n");
+          break;
+        case 6:
+          printf("Ceara\n");
+          break;
+        case 7:
+          printf("Distrito Federal\n");
+          break;
+        case 8:
+          printf("Espirito Santo\n");
+          break;
+        case 9:
+          printf("Goias\n");
+          break;
+        case 10:
+          printf("Maranhao\n");
+          break;
+        case 11:
+          printf("Minas Gerais\n");
+          break;
+        case 12:
+          printf("Mato Grosso do Sul\n");
+          break;
+        case 13:
+          printf("Mato Grosso\n");
+          break;
+        case 14:
+          printf("Parana\n");
+          break;
+        case 15:
+          printf("Paraiba\n");
+          break;
+        case 16:
+          printf("Pernambuco\n");
+          break;
+        case 17:
+          printf("Piaui\n");
+          break;
+        case 18:
+          printf("Para\n");
+          break;
+        case 19:
+          printf("Rio de Janeiro\n");
+          break;
+        case 20:
+          printf("Rio Grande do Norte\n");
+          break;
+        case 21:
+          printf("Rondonia\n");
+          break;
+        case 22:
+          printf("Roraima\n");
+          break;
+        case 23:
+          printf("Rio Grande do Sul\n");
+          break;
+        case 24:
+          printf("Santa Catarina\n");
+          break;
+        case 25:
+          printf("Sergipe\n");
+          break;
+        case 26:
+          printf("Sao Paulo\n");
+          break;
+        case 27:
+          printf("Tocantins\n");
+          break;
+      }
+    printf("%d\n", bairros);
+
+    if(evento.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
+      printf("clicou\n");
+      printf("%d %d\n", evento.mouse.x, evento.mouse.y);
+      resposta = brasil(evento.mouse.x, evento.mouse.y, bairros);
+      printf("%d\n", resposta);
+    }
+    if(resposta == bairros){
+      printf("acertou\n");
+    	score++;
+      	if(score==5){
+      		break;
+      	}
+    }
+    if(resposta != bairros && resposta != -1){
+      printf("perdeu\n");
+      resposta = 100;
+      flag=1;
+
+    }
+    while(resposta==1){
+      al_draw_bitmap(an, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(an);
+    }
+   	while(resposta==2){
+      al_draw_bitmap(ar, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(ar);
+    }
+    while(resposta==3){
+      al_draw_bitmap(bu, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(bu);
+    }
+    while(resposta==4){
+      al_draw_bitmap(ca, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(ca);
+    }
+
+    while(resposta==5){
+      al_draw_bitmap(cv, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(cv);
+	}
+    while(resposta==6){
+      al_draw_bitmap(cij, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(cij);
+    }
+    while(resposta==7){
+      al_draw_bitmap(cit, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(cit);
+    }
+    while(resposta==8){
+      al_draw_bitmap(er, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(er);
+    }
+    while(resposta==9){
+      al_draw_bitmap(fr, 0 , 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(fr);
+    }
+    while(resposta==10){
+      al_draw_bitmap(gu, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(gu);
+    }
+    
+    while(resposta==11){ 
+      al_draw_bitmap(ip, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(ip);
+    }
+    while(resposta==12){
+      al_draw_bitmap(it, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(ita);
+    }
+    while(resposta==13){
+      al_draw_bitmap(ja, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(ja);
+    }
+    while(resposta==14){
+      al_draw_bitmap(la, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(la);
+    }
+    while(resposta==15){
+      al_draw_bitmap(mb, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(mb);
+    }
+
+     while(resposta==16){
+      al_draw_bitmap(mo, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(mo);
+    }
+
+
+    while(resposta==17){
+      al_draw_bitmap(pa, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(pa);
+    }
+    while(resposta==18){
+      al_draw_bitmap(pe, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(pe);
+    }
+    while(resposta==19){
+      al_draw_bitmap(pi, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(pi);
+    }
+
+    while(resposta==20){
+      al_draw_bitmap(pir, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(pir);
+    }
+    while(resposta==21){
+      al_draw_bitmap(sa, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(sa);
+    }
+    while(resposta==22){
+      al_draw_bitmap(saa, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(saa);
+    }
+    while(resposta==23){
+      al_draw_bitmap(sm, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(sm);
+    }
+    while(resposta==24){
+      al_draw_bitmap(smi, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(smi);
+    }
+    while(resposta==25){
+      al_draw_bitmap(se, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      i=0;
+      resposta=-1;
+      al_destroy_bitmap(se);
+    }
+    while(resposta==26){
+      al_draw_bitmap(so, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(so);
+    }
+    while(resposta==27){
+      al_draw_bitmap(tr, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(tr);
+    }
+    while(resposta==28){
+      al_draw_bitmap(vi, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(vi);
+    }
+    while(resposta==29){
+      al_draw_bitmap(vim, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(vim);
+    }
+    while(resposta==30){
+      al_draw_bitmap(vip, 0, 0, 0);
+      al_flip_display();  
+      al_rest(1.5);
+      resposta=-1;
+      i=0;
+      al_destroy_bitmap(vip);
+    }
+    
+    
+  }
+  printf("finalizou função\n");
+  al_destroy_bitmap(mapa_sp);
+  al_destroy_bitmap(fundo_jogo);
+
+}
+
+
 void jogaar(){
 	printf("abriu\n");
   int flag = 0,x,y,estado=0, resposta=-1,i=0,lixo=NULL, score=0;
@@ -364,23 +782,20 @@ void jogaar(){
       resposta = brasil(evento.mouse.x, evento.mouse.y, estado);
       printf("%d\n", resposta);
     }
-    else{
 
-    }
     if(resposta == estado){
       printf("acertou\n");
     	score++;
-      	if(score==5){
-      		break;
-      	}
+    	printf("%d\n", score);
     }
-    if(resposta != estado && resposta != -1){
+    while(resposta != estado && resposta != -1){
       printf("perdeu\n");
       resposta = 100;
       flag=1;
+      break;
 
     }
-    if(resposta==1){
+     if(resposta==1){
       al_draw_bitmap(ac, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -395,7 +810,7 @@ void jogaar(){
       resposta=-1;
       i=0;
       al_destroy_bitmap(al);
-    }
+  }
     if(resposta==3){
       al_draw_bitmap(am, 0, 0, 0);
       al_flip_display();  
@@ -418,6 +833,7 @@ void jogaar(){
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ba);
     }
     if(resposta==6){
       al_draw_bitmap(ce, 0, 0, 0);
@@ -436,7 +852,7 @@ void jogaar(){
       al_destroy_bitmap(df);
     }
     if(resposta==8){
-      al_draw_bitmap(es, 0 , 0, 0);
+      al_draw_bitmap(es, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
@@ -451,7 +867,8 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(go);
     }
-      al_draw_bitmap(ma, 0, 0, 0);
+    if(resposta==10){
+    al_draw_bitmap(ma, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
@@ -598,5 +1015,17 @@ void jogaar(){
       i=0;
       al_destroy_bitmap(to);
     }
-}
+    if(score==5){
+      	break;
+     }
+    
+    
+  }
+  printf("finalizou função\n");
+  al_destroy_bitmap(mapa_br);
+  al_destroy_bitmap(fundo_jogo);
+  fila_eventos=NULL;
+  bairros();
+  return;
 
+}
