@@ -381,7 +381,7 @@ void bairros(){
       flag=1;
 
     }
-    if(resposta==1){
+    while(resposta==1){
       al_draw_bitmap(an, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -389,7 +389,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(an);
     }
-    if(resposta==2){
+   	while(resposta==2){
       al_draw_bitmap(ar, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -397,7 +397,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(ar);
     }
-    if(resposta==3){
+    while(resposta==3){
       al_draw_bitmap(bu, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -405,7 +405,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(bu);
     }
-    if(resposta==4){
+    while(resposta==4){
       al_draw_bitmap(ca, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -414,7 +414,7 @@ void bairros(){
       al_destroy_bitmap(ca);
     }
 
-    if(resposta==5){
+    while(resposta==5){
       al_draw_bitmap(cv, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -422,7 +422,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(cv);
 	}
-    if(resposta==6){
+    while(resposta==6){
       al_draw_bitmap(cij, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -430,7 +430,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(cij);
     }
-    if(resposta==7){
+    while(resposta==7){
       al_draw_bitmap(cit, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -438,7 +438,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(cit);
     }
-    if(resposta==8){
+    while(resposta==8){
       al_draw_bitmap(er, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -446,7 +446,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(er);
     }
-    if(resposta==9){
+    while(resposta==9){
       al_draw_bitmap(fr, 0 , 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -454,7 +454,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(fr);
     }
-    if(resposta==10){
+    while(resposta==10){
       al_draw_bitmap(gu, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -463,7 +463,7 @@ void bairros(){
       al_destroy_bitmap(gu);
     }
     
-    if(resposta==11){ 
+    while(resposta==11){ 
       al_draw_bitmap(ip, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -471,7 +471,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(ip);
     }
-    if(resposta==12){
+    while(resposta==12){
       al_draw_bitmap(it, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -479,7 +479,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(ita);
     }
-    if(resposta==13){
+    while(resposta==13){
       al_draw_bitmap(ja, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -487,7 +487,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(ja);
     }
-    if(resposta==14){
+    while(resposta==14){
       al_draw_bitmap(la, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -495,7 +495,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(la);
     }
-    if(resposta==15){
+    while(resposta==15){
       al_draw_bitmap(mb, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -504,7 +504,7 @@ void bairros(){
       al_destroy_bitmap(mb);
     }
 
-     if(resposta==16){
+     while(resposta==16){
       al_draw_bitmap(mo, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -514,7 +514,7 @@ void bairros(){
     }
 
 
-    if(resposta==17){
+    while(resposta==17){
       al_draw_bitmap(pa, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -522,7 +522,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(pa);
     }
-    if(resposta==18){
+    while(resposta==18){
       al_draw_bitmap(pe, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -530,7 +530,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(pe);
     }
-    if(resposta==19){
+    while(resposta==19){
       al_draw_bitmap(pi, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -539,7 +539,7 @@ void bairros(){
       al_destroy_bitmap(pi);
     }
 
-    if(resposta==20){
+    while(resposta==20){
       al_draw_bitmap(pir, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -547,7 +547,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(pir);
     }
-    if(resposta==21){
+    while(resposta==21){
       al_draw_bitmap(sa, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -555,7 +555,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(sa);
     }
-    if(resposta==22){
+    while(resposta==22){
       al_draw_bitmap(saa, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -563,7 +563,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(saa);
     }
-    if(resposta==23){
+    while(resposta==23){
       al_draw_bitmap(sm, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -571,7 +571,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(sm);
     }
-    if(resposta==24){
+    while(resposta==24){
       al_draw_bitmap(smi, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -579,7 +579,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(smi);
     }
-    if(resposta==25){
+    while(resposta==25){
       al_draw_bitmap(se, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -587,7 +587,7 @@ void bairros(){
       resposta=-1;
       al_destroy_bitmap(se);
     }
-    if(resposta==26){
+    while(resposta==26){
       al_draw_bitmap(so, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -595,7 +595,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(so);
     }
-    if(resposta==27){
+    while(resposta==27){
       al_draw_bitmap(tr, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -603,7 +603,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(tr);
     }
-    if(resposta==28){
+    while(resposta==28){
       al_draw_bitmap(vi, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -611,7 +611,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(vi);
     }
-    if(resposta==29){
+    while(resposta==29){
       al_draw_bitmap(vim, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -619,7 +619,7 @@ void bairros(){
       i=0;
       al_destroy_bitmap(vim);
     }
-    if(resposta==30){
+    while(resposta==30){
       al_draw_bitmap(vip, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
@@ -787,9 +787,6 @@ void jogaar(){
       printf("acertou\n");
     	score++;
     	printf("%d\n", score);
-      	if(score==5){
-      		break;
-      	}
     }
     while(resposta != estado && resposta != -1){
       printf("perdeu\n");
@@ -798,243 +795,237 @@ void jogaar(){
       break;
 
     }
-    while(resposta==1){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+     if(resposta==1){
       al_draw_bitmap(ac, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ac);
     }
-    while(resposta==2){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==2){
       al_draw_bitmap(al, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
-    }
-    while(resposta==3){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+      al_destroy_bitmap(al);
+  }
+    if(resposta==3){
       al_draw_bitmap(am, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(am);
     }
-    while(resposta==4){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==4){
       al_draw_bitmap(ap, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ap);
     }
-    while(resposta==5){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==5){
       al_draw_bitmap(ba, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ba);
     }
-    while(resposta==6){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==6){
       al_draw_bitmap(ce, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ce);
     }
-    while(resposta==7){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==7){
       al_draw_bitmap(df, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(df);
     }
-<<<<<<< HEAD
-    while(resposta==8){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
-      al_draw_bitmap(es, 0, 0, 0);
-=======
     if(resposta==8){
-      al_draw_bitmap(es, 0 , 0, 0);
->>>>>>> 51ec64fbb90e36b75b9bfb99ab2e25b5ab85aa19
+      al_draw_bitmap(es, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(es);
     }
-    while(resposta==9){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==9){
       al_draw_bitmap(go, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(go);
     }
-    while(resposta==10){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
-      al_draw_bitmap(ma, 0, 0, 0);
+    if(resposta==10){
+    al_draw_bitmap(ma, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ma);
     }
-    while(resposta==11){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==11){
       al_draw_bitmap(mg, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(mg);
     }
-    while(resposta==12){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==12){
       al_draw_bitmap(ms, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ms);
     }
-    while(resposta==13){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==13){
       al_draw_bitmap(mt, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(mt);
     }
-    while(resposta==14){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==14){
       al_draw_bitmap(pr, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(pr);
     }
 
-     while(resposta==15){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+     if(resposta==15){
       al_draw_bitmap(pb, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(pb);
     }
 
 
-    while(resposta==16){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==16){
       al_draw_bitmap(pe, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(pe);
     }
-    while(resposta==17){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==17){
       al_draw_bitmap(pi, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(pi);
     }
-    while(resposta==18){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==18){
       al_draw_bitmap(pa, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(pa);
     }
-    while(resposta==19){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+
+    if(resposta==19){
       al_draw_bitmap(rj, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(rj);
     }
-    while(resposta==20){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==20){
       al_draw_bitmap(rn, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(rn);
     }
-    while(resposta==21){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==21){
       al_draw_bitmap(ro, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(ro);
     }
-    while(resposta==22){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==22){
       al_draw_bitmap(rr, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(rr);
     }
-    while(resposta==23){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==23){
       al_draw_bitmap(rs, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(rs);
     }
-    while(resposta==24){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==24){
       al_draw_bitmap(sc, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       i=0;
       resposta=-1;
+      al_destroy_bitmap(sc);
     }
-    while(resposta==25){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==25){
       al_draw_bitmap(se, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(se);
     }
-    while(resposta==26){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==26){
       al_draw_bitmap(sp, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(sp);
     }
-    while(resposta==27){
-      al_draw_bitmap(fundo_jogo, 0, 0, 0);
+    if(resposta==27){
       al_draw_bitmap(to, 0, 0, 0);
       al_flip_display();  
       al_rest(1.5);
       resposta=-1;
       i=0;
+      al_destroy_bitmap(to);
     }
-<<<<<<< HEAD
+    if(score==5){
+      	break;
+     }
     
     
   }
   printf("finalizou função\n");
   al_destroy_bitmap(mapa_br);
   al_destroy_bitmap(fundo_jogo);
-  if(score==5){
-  	bairros();
-  }
+  fila_eventos=NULL;
+  bairros();
   return;
 
-=======
->>>>>>> 51ec64fbb90e36b75b9bfb99ab2e25b5ab85aa19
 }
-
