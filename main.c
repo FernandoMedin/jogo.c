@@ -99,10 +99,10 @@ int main(void){
 			al_draw_bitmap(folha, 370, 420, 0);
 			al_draw_bitmap(tax_1, 380, 400, 0);
 			al_draw_bitmap(tax_1, 730, 400, 0);
-			al_draw_text(font, al_map_rgb(0, 0, 0), 460, 430, 0, "Alex Shun");
+			al_draw_text(font, al_map_rgb(0, 0, 0), 440, 430, 0, "Alex Shun");
 			al_draw_text(font, al_map_rgb(0, 0, 0), 480, 457, 0, "Fernando Medin");
 			al_draw_text(font, al_map_rgb(0, 0, 0), 460, 481, 0, "Helder Doutel");
-			al_draw_text(font, al_map_rgb(0, 0, 0), 480, 510, 0, "Rodrigo Melo");
+			al_draw_text(font, al_map_rgb(0, 0, 0), 500, 510, 0, "Rodrigo Melo");
 			al_flip_display();
 			i=1;
 		}
@@ -149,7 +149,6 @@ int main(void){
 					jogaar();
 			}
 		}
-
 	}
 
 	al_destroy_bitmap(sombra);
