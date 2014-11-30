@@ -1,6 +1,12 @@
 ﻿#include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
 
+int randompais(){
+	time_t t;
+	srand((unsigned) time(&t));
+	return rand()%13+1;
+}
+
 int randompoint()
 {
 	time_t t;
@@ -665,7 +671,7 @@ void bairros(int p){
 			printf("%d\n", resposta);
 		}
 		if(resposta == bairros){
-				printf("acertou\n");
+			printf("acertou\n");
 			score++;
 			if(score==5){
 				break;
@@ -941,9 +947,9 @@ void bairros(int p){
 }
 
 
-void jogaar(){
+void jogaar(int p){
 	printf("abriu\n");
-	int flag = 0,x,y,estado=0, resposta=-1,i=0,lixo=NULL, score=0;
+	int flag = 0,x,y,estado=0, resposta=-1,i=0,lixo=NULL, score=p;
 	ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_br = NULL, *rs = NULL;
 	ALLEGRO_BITMAP *ac=NULL, *al=NULL, *am=NULL, *ap=NULL, *ba=NULL, *ce=NULL, *df=NULL, *es=NULL, *go= NULL, *ma=NULL, *mg=NULL, *ms=NULL, *mt=NULL, *pa=NULL, *pb=NULL, *pe=NULL;
 	ALLEGRO_BITMAP *pi=NULL, *pr=NULL, *rj=NULL, *rn=NULL, *ro=NULL, *rr=NULL, *sc=NULL, *se=NULL, *sp=NULL, *to=NULL; 

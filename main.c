@@ -146,7 +146,7 @@ int main(void){
 				jogar = 1;
 				printf("vaiabrir\n");
 				if(jogar == 1)
-					jogaar();
+					jogaar(score);
 			}
 		}
 	}
