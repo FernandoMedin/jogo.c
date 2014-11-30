@@ -18,6 +18,7 @@ void fadein(ALLEGRO_BITMAP *imagem, int vel);
 
 ALLEGRO_BITMAP *fundo_jogo = NULL, *mapa_br = NULL;	
 ALLEGRO_DISPLAY *janela = NULL;
+ALLEGRO_FONT *font = NULL;
 
 int main(void){
 
@@ -28,7 +29,6 @@ int main(void){
 	ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra = NULL, *sombra_folha = NULL;
 	ALLEGRO_AUDIO_STREAM *musica = NULL;
 	ALLEGRO_SAMPLE *sample = NULL;
-	ALLEGRO_FONT *font = NULL;
 	int sair = 0, teste = 0, jogar = 0, opcoes = 0, i=0, score=0;
 
 	// Inicializa a Allegro
@@ -147,9 +147,14 @@ int main(void){
 				printf("vaiabrir\n");
 				al_destroy_bitmap(botao_jogar_press);
 				if(jogar == 1)
+<<<<<<< HEAD
 					jogaar(fila_eventos, evento);
 				
   			}
+=======
+					jogaar(score);
+			}
+>>>>>>> f5dfeb93ce20d9181370654eac4abbaadc30441c
 		}
 	}
 
