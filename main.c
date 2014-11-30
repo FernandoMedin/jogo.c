@@ -145,9 +145,11 @@ int main(void){
 				al_flip_display();
 				jogar = 1;
 				printf("vaiabrir\n");
+				al_destroy_bitmap(botao_jogar_press);
 				if(jogar == 1)
-					jogaar();
-			}
+					jogaar(fila_eventos, evento);
+				
+  			}
 		}
 	}
 
@@ -160,6 +162,7 @@ int main(void){
 	al_destroy_bitmap(folha);
 	al_destroy_bitmap(tax_1);
 	al_destroy_bitmap(imagem);
+	al_destroy_display(janela);
 
 	// Finaliza a janela
 	return 0;
