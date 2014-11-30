@@ -526,96 +526,127 @@ void bairros(int p){
 			switch(bairros){
 				case 1:
 					printf("Parelheiros\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Parelheiros");
 					break;
 				case 2:
 					printf("Socorro\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Socorro");
 					break;
 				case 3:
 					printf("M Boi Mirim\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "M Boi Mirim");
 					break;
 				case 4:
 					printf("Campo Limpo\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Campo Limpo");
 					break;
 				case 5:
 					printf("Cidade Ademar\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Cidade Ademar");
 					break;
 				case 6:
 					printf("Santo Amaro\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Santo Amaro");
 					break;
 				case 7:
 					printf("Jabaquara\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Jabaquara");
 					break;
 				case 8:
 					printf("Butanta\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Butanta");
 					break;
 				case 9:
 					printf("Ipiranga\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Ipiranga");
 					break;
 				case 10:
 					printf("Vila Mariana\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Vila Mariana");
 					break;
 				case 11:
 					printf("Pinheiros\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Pinheiros");
 					break;
 				case 12:
 					printf("Lapa\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Lapa");
 					break;
 				case 13:
 					printf("Se\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Se");
 					break;
 				case 14:
 					printf("Pirituba\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Pirituba");
 					break;
 				case 15:
 					printf("Anhanguera\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Anhanguera");
 					break;
 				case 16:
 					printf("Freguesia do O\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Freguesia do O");
 					break;
 				case 17:
 					printf("Casa Verde\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Casa Verde");
 					break;
 				case 18:
 					printf("Santana\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Santana");
 					break;
 				case 19:
 					printf("Tremembe\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Tremembe");
 					break;
 				case 20:
 					printf("Vila Maria\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Vila Maria");
 					break;
 				case 21:
 					printf("Penha\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Penha");
 					break;
 				case 22:
 					printf("Ermelino Matarazzo\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Ermelino Matarazzo");
 					break;
 				case 23:
 					printf("Sao Miguel\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Sao Miguel");
 					break;
 				case 24:
 					printf("Itaquera\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Itaquera");
 					break;
 				case 25:
 					printf("Itaim\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Itaim");
 					break;
 				case 26:
 					printf("Guaianases\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Guaianases");
 					break;
 				case 27:
 					printf("Cidade Tiradentes\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Cidade Tiradentes");
 					break;
 				case 28:
 					printf("Sao Matheus\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Sao Matheus");
 					break;
 				case 29:
 					printf("Vila Prudente\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Vila Prudente");
 					break;
 				case 30:
 					printf("Aricanduva\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Aricanduva");
 					break;
 				case 31:
 					printf("Mooca\n");
+					al_draw_text(font, al_map_rgb(0, 0, 0), 490, 500, 0, "Mooca");
 					break;
 			}
 			al_flip_display();
@@ -634,7 +665,7 @@ void bairros(int p){
 			printf("%d\n", resposta);
 		}
 		if(resposta == bairros){
-			printf("acertou\n");
+				printf("acertou\n");
 			score++;
 			if(score==5){
 				break;
