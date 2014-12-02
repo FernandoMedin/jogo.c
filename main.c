@@ -183,24 +183,12 @@ int main(){
 				printf("vaiabrir\n");
 				al_destroy_bitmap(botao_jogar_press);
 				if(jogar == 1)
-<<<<<<< HEAD
 					americas(fila_eventos, evento);
 				botao_jogar_press = al_load_bitmap("imagens/botao_jogar2.png");
 
-=======
-<<<<<<< HEAD
-					jogaar(fila_eventos, evento);
-				
-  			}
-=======
-					jogaar(score);
->>>>>>> 53ae9fe3f35a3ce730125e930173c64091c6e1ca
 			}
->>>>>>> f5dfeb93ce20d9181370654eac4abbaadc30441c
 		}
 	}
-
-
 
 	al_destroy_bitmap(sombra);
 	al_destroy_bitmap(botao_sair);
@@ -212,53 +200,5 @@ int main(){
 	al_destroy_bitmap(tax_1);
 	al_destroy_bitmap(imagem);
 	al_destroy_display(janela);
-<<<<<<< HEAD
 	return 0;	
-=======
-
-	// Finaliza a janela
-	return 0;
-}
-
-void fadein(ALLEGRO_BITMAP *imagem, int vel){
-
-	if(vel < 0){
-		vel = 1;
-	}
-	else if(vel > 15){
-		vel = 15;
-	}
-
-	int alfa;
-	for (alfa = 0; alfa <= 255; alfa += vel){
-		al_clear_to_color(al_map_rgb(0, 0, 0));
-		al_draw_tinted_bitmap(imagem, al_map_rgba(alfa, alfa, alfa, alfa), 0, 0, 0);
-		al_flip_display();
-		al_rest(0.005);
-	}
-}
-void fadeout(int vel){
-	ALLEGRO_BITMAP *buffer = NULL;
-	buffer = al_create_bitmap(LARGURA_TELA, ALTURA_TELA);
-	al_set_target_bitmap(buffer);
-	al_draw_bitmap(al_get_backbuffer(janela), 0, 0, 0);
-	al_set_target_bitmap(al_get_backbuffer(janela));
-
-	if (vel <= 0){
-		vel = 1;
-	}
-	else if (vel > 15){
-		vel = 15;
-	}
-
-	int alfa;
-	for (alfa = 0; alfa <= 255; alfa += vel){
-		al_clear_to_color(al_map_rgba(0, 0, 0, 0));
-		al_draw_tinted_bitmap(buffer, al_map_rgba(255 - alfa, 255 - alfa, 255 - alfa, alfa), 0, 0, 0);
-		al_flip_display();
-		al_rest(0.005);
-	}
-
-	al_destroy_bitmap(buffer);
->>>>>>> 53ae9fe3f35a3ce730125e930173c64091c6e1ca
 }
