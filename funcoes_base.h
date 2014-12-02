@@ -1599,13 +1599,14 @@ void americas(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento){
 		int flag = 0,x,y,pais=0, resposta=-1,i=0,lixo=NULL, score=0, j=0;
 		ALLEGRO_BITMAP *fundo_jogo = NULL, *americam = NULL, *an = NULL;
 		ALLEGRO_BITMAP *guif=NULL, *su=NULL, *gui=NULL, *ve=NULL, *co=NULL, *eq=NULL, *pe=NULL, *bo=NULL, *ch=NULL, *pa=NULL, *ur=NULL, *ar=NULL, *br=NULL;
-		ALLEGRO_FONT *font=NULL;
+		ALLEGRO_FONT *font=NULL, *font_fase=NULL;
 		ALLEGRO_BITMAP *tax_1 = NULL, *sombra_folha = NULL, *folha = NULL, *fase1=NULL;
 		
 		fundo_jogo = al_load_bitmap("imagens/fundo_jogo.png");
 		americam = al_load_bitmap("imagens/america.png");
 		
-		font = al_load_font("fonts/SchoolNotes.ttf", 70, 0);
+		font = al_load_font("fonts/SchoolNotes.ttf", 70, 0);
+		font_fase = al_load_font("fonts/varsity_regular.ttf", 100, 0);
 		tax_1 = al_load_bitmap("imagens/tachinha2.png");
 		sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
 		folha = al_load_bitmap("imagens/folha_lindinha.png");
@@ -1616,10 +1617,13 @@ void americas(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento){
 		while(flag == 0){
 			if(i==0){
 				if(j==0){
-					al_draw_bitmap(fase1, 0 ,0 ,0);
-						al_flip_display();
-						al_rest(1.5);
-						j=1;
+					al_draw_bitmap(fundo_jogo, 0 ,0 ,0);
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Primeiro Nível!");
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você Está Com");
+					al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
+						al_flip_display();
+						al_rest(1.5);
+						j=1;
 				}
 				al_draw_bitmap(fundo_jogo, 0, 0, 0);
 					al_draw_bitmap(americam, 0, 0, 0);
