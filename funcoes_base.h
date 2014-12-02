@@ -630,7 +630,7 @@ void bairro(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 		
 		font = al_load_font("fonts/SchoolNotes.ttf", 70, 0);
 		font_fase = al_load_font("fonts/varsity_regular.ttf", 100, 0);
-		tax_1 = al_load_bitmap("imagens/tachinha2.png");
+	tax_1 = al_load_bitmap("imagens/tachinha2.png");
 		sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
 		folha = al_load_bitmap("imagens/folha_lindinha.png");
 		
@@ -677,10 +677,10 @@ void bairro(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 			if(i==0){
 				if(j==0){
 					al_draw_bitmap(fundo_jogo, 0, 0, 0);
-					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Terceiro Nível!");
+						al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Terceiro Nível!");
 					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você Está Com");
 					al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
-						al_flip_display();
+					al_flip_display();
 						al_rest(1.5);
 						j=1;
 				}
@@ -846,17 +846,26 @@ void bairro(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 			if(resposta == bairros){
 				printf("acertou\n");
 					score++;
-					if(score==5){
+					if(score==15){
 						break;
 					}
 			}
 			if(resposta != bairros && resposta != -1){
 				printf("perdeu\n");
-					resposta = 100;
+					resposta = 100;
 					flag=1;
+					al_draw_bitmap(fundo_jogo, 0 ,0 ,0);
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 140, 120, 0, "Parabéns!!");
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você conseguiu:");
+					if(score == 1)
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Ponto!", score);
+					else
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
+					al_flip_display();
+					al_rest(2.0);
 					al_destroy_bitmap(mapa_sp);
 					al_destroy_bitmap(fundo_jogo);
-					
+					return;
 			}
 			while(resposta==1){
 				al_draw_bitmap(pa, 0, 0, 0);
@@ -1131,7 +1140,7 @@ void jogaar(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 		ALLEGRO_BITMAP *pi=NULL, *pr=NULL, *rj=NULL, *rn=NULL, *ro=NULL, *rr=NULL, *sc=NULL, *se=NULL, *sp=NULL, *to=NULL; 
 		ALLEGRO_BITMAP *tax_1 = NULL, *folha = NULL, *sombra_folha = NULL;
 		ALLEGRO_FONT *font = NULL, *font_fase = NULL;
-		
+	
 		fundo_jogo = al_load_bitmap("imagens/fundo_jogo.png");
 		mapa_br = al_load_bitmap("imagens/mapa_br.png");
 		fase2 = al_load_bitmap("imagens/fase2.png");
@@ -1141,8 +1150,8 @@ void jogaar(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 		sombra_folha = al_load_bitmap("imagens/sombra_papel.png");
 		folha = al_load_bitmap("imagens/folha_lindinha.png");
 		font = al_load_font("fonts/SchoolNotes.ttf", 70, 0);
-		font_fase = al_load_font("fonts/varsity_regular.ttf", 100, 0);
-		
+	font_fase = al_load_font("fonts/varsity_regular.ttf", 100, 0);
+	
 		ac = al_load_bitmap("imagens/mapa_br_ac.png");
 		al = al_load_bitmap("imagens/mapa_br_al.png");
 		am = al_load_bitmap("imagens/mapa_br_am.png");
@@ -1181,10 +1190,10 @@ void jogaar(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 			if(i==0){
 				if(j==0){
 					al_draw_bitmap(fundo_jogo, 0, 0, 0);
-					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Segundo Nível!");
+						al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Segundo Nível!");
 					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você Está Com");
 					al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
-						al_flip_display();
+					al_flip_display();
 						al_rest(1.5);
 						j=1;
 				}
@@ -1335,6 +1344,15 @@ void jogaar(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento, int p){
 			while(resposta != estado && resposta != -1){
 				printf("perdeu\n");
 					resposta = 100;
+					al_draw_bitmap(fundo_jogo, 0 ,0 ,0);
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 140, 120, 0, "Parabéns!!");
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você conseguiu:");
+					if(score == 1)
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Ponto!", score);
+					else
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
+					al_flip_display();
+					al_rest(2.0);
 					flag=1;
 					return;
 					
@@ -1629,9 +1647,9 @@ void americas(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento){
 					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 50, 120, 0, "Primeiro Nível!");
 					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você Está Com");
 					al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
-						al_flip_display();
-						al_rest(1.5);
-						j=1;
+					al_flip_display();
+					al_rest(1.5);
+					j=1;
 				}
 				al_draw_bitmap(fundo_jogo, 0, 0, 0);
 					al_draw_bitmap(americam, 0, 0, 0);
@@ -1730,9 +1748,18 @@ void americas(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento){
 					}
 			}
 			if(resposta != pais && resposta != -1){
-				printf("perdeu\n");
-					resposta = 100;
+				printf("perdeu\n");
+					resposta = 100;
 					flag=1;
+					al_draw_bitmap(fundo_jogo, 0 ,0 ,0);
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 140, 120, 0, "Parabéns!!");
+					al_draw_text(font_fase, al_map_rgb(0, 0, 0), 40, 220, 0, "Você conseguiu:");
+					if(score == 1)
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Ponto!", score);
+					else
+						al_draw_textf(font_fase, al_map_rgb(0, 0, 0), 180, 320, 0, "%d Pontos!", score);
+					al_flip_display();
+					al_rest(2.0);
 					al_destroy_bitmap(americam);
 					al_destroy_bitmap(fundo_jogo);
 					return;
@@ -1864,9 +1891,9 @@ void americas(ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_EVENT evento){
 			
 		}
 	printf("finalizou função\n");
-		al_destroy_bitmap(americam);
-		al_destroy_bitmap(fundo_jogo);
-		jogaar(fila_eventos, evento, score);
-		return;
-		
+	al_destroy_bitmap(americam);
+	al_destroy_bitmap(fundo_jogo);
+	jogaar(fila_eventos, evento, score);
+	return;
+	
 }
