@@ -59,7 +59,6 @@ void fadeout(int vel){
 int main(){
 
 	ALLEGRO_BITMAP *fundo_jogo = NULL;
-
 	ALLEGRO_FONT *font = NULL;
 	ALLEGRO_BITMAP *imagem = NULL, *botao_sair = NULL, *botao_jogar = NULL, *botao_opcoes = NULL, *abertura = NULL, *logo = NULL;
 	ALLEGRO_BITMAP *botao_sair_press = NULL, *botao_jogar_press = NULL, *botao_opcoes_press = NULL;

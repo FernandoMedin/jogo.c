@@ -108,21 +108,11 @@ while (1)
                   next=1;
                   }
             }
-
-
         }
-         
 
-
-
-
-         if (evento.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
-        {
+         if (evento.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
             break;
         }
-
-            
-             
 }
 fclose(file);
 fclose(file2);
