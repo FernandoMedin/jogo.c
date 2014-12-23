@@ -94,8 +94,8 @@ int op(ALLEGRO_AUDIO_STREAM *musica, ALLEGRO_EVENT_QUEUE *fila_eventos, ALLEGRO_
 								}
 						}
 	al_destroy_bitmap(botaoon);
-		al_destroy_bitmap(botaoof);
-		return 0;
+	al_destroy_bitmap(botaoof);
+	return 0;
 }
 
 
@@ -271,443 +271,191 @@ int brasil(int x,int y,int estado){
 int bairros_ddt(int x,int y,int bai){
 
 	switch (bai){
-
-		
-
 		case 1://paralheiros
-
-			
-
-				if(ddt(9,590,274,592,121,270,x,y))
-
-				{
-
-					return 1;
-
-				}
-
-			
+			if(ddt(9,590,274,592,121,270,x,y))
+			{
+				return 1;
+			}
 
 		case 2://socorro
-
-				
-
-					if(ddt(123,477,271,407,108,246,x,y))
-
-					{
-
-						return 2;
-
-					}
-
-				
+			if(ddt(123,477,271,407,108,246,x,y))
+			{
+				return 2;
+			}
 
 		case 3://M Boi Miri
-
-					
-
-						if(ddt(27,293,81,404,152,247,x,y))
-
-						{
-
-							return 3;
-
-						}
-
-					
+			if(ddt(27,293,81,404,152,247,x,y))
+			{
+				return 3;
+			}
 
 		case 4://Campo Limpo
-
-						
-
-							if(ddt(24,268,84,363,172,225,x,y))
-
-							{
-
-								return 4;
-
-							}
-
-						
+			if(ddt(24,268,84,363,172,225,x,y))
+			{
+				return 4;
+			}
 
 		case 5://Cidade Ademar
-
-							
-
-								if(ddt(99,280,188,239,228,379,x,y))
-
-								{
-
-									return 5;
-
-								}
-
-							
+			if(ddt(99,280,188,239,228,379,x,y))
+			{
+				return 5;
+			}
 
 		case 6://Santo Amaro
-
-								
-
-									if(ddt(89,252,195,206,173,350,x,y))
-
-									{
-
-										return 6;
-
-									}
-
-								
+			if(ddt(89,252,195,206,173,350,x,y))
+			{
+				return 6;
+			}
 
 		case 7://Jabaquara
-
-									
-
-										if(ddt(141,255,210,222,201,311,x,y))
-
-										{
-
-											return 7;
-
-										}
-
-									
+			if(ddt(141,255,210,222,201,311,x,y))
+			{
+				return 7;
+			}
 
 		case 8://Butanta
-
-										
-
-											if(ddt(39,170,38,293,171,216,x,y))
-
-											{
-
-												return 8;
-
-											}
-
-										
+			if(ddt(39,170,38,293,171,216,x,y))
+			{
+				return 8;
+			}
 
 		case 9://Ipiranga
-
-											
-
-												if(ddt(177,188,280,180,204,325,x,y))
-
-												{
-
-													return 9;
-
-												}
-
-											
+			if(ddt(177,188,280,180,204,325,x,y))
+			{
+				return 9;
+			}
 
 		case 10://Vila Mariana
-
-												
-
-													if(ddt(136,197,225,165,204,297,x,y))
-
-													{
-
-														return 10;
-
-													}
-
-												
+			if(ddt(136,197,225,165,204,297,x,y))
+			{
+				return 10;
+			}
 
 		case 11://Pinheiros
-
-													
-
-														if(ddt(91,162,143,292,212,188,x,y))
-
-														{
-
-															return 11;
-
-														}
-
-													
+			if(ddt(91,162,143,292,212,188,x,y))
+			{
+				return 11;
+			}
 
 		case 12://Lapa
-
-														
-
-															if(ddt(82,115,77,225,188,161,x,y))
-
-															{
-
-																return 12;
-
-															}
-
-														
+			if(ddt(82,115,77,225,188,161,x,y))
+			{
+				return 12;
+			}
 
 		case 13://Se
-
-															
-
-																if(ddt(139,203,182,130,225,210,x,y))
-
-																{
-
-																	return 13;
-
-																}
-
-															
+			if(ddt(139,203,182,130,225,210,x,y))
+			{
+				return 13;
+			}
 
 		case 14://Pirituba
-
-																
-
-																	if(ddt(56,98,143,186,153,57,x,y))
-
-																	{
-
-																		return 14;
-
-																	}
-
-																
+			if(ddt(56,98,143,186,153,57,x,y))
+			{
+				return 14;
+			}
 
 		case 15://Anhanguera
-
-																	
-
-																		if(ddt(45,146,157,57,25,31,x,y))
-
-																		{
-
-																			return 15;
-
-																		}
-
-																	
+			if(ddt(45,146,157,57,25,31,x,y))
+			{
+				return 15;
+			}
 
 		case 16://Freguesia do O
-
-																		
-
-if(ddt(109,151,176,155,156,47,x,y))
-
-																			{
-
-																				return 16;
-
-																			}
-
-																		
+			if(ddt(109,151,176,155,156,47,x,y))
+			{
+				return 16;
+			}
 
 		case 17://Casa Verde
-
-																			
-
-																				if(ddt(136,144,196,158,177,53,x,y))
-
-																				{
-
-																					return 17;
-
-																				}
-
-																			
+			if(ddt(136,144,196,158,177,53,x,y))
+			{
+				return 17;
+			}
 
 		case 18://Santana
-
-																				
-
-																					if(ddt(155,151,236,169,224,41,x,y))
-
-																					{
-
-																						return 18;
-
-																					}
-
-																				
+			if(ddt(155,151,236,169,224,41,x,y))
+			{
+				return 18;
+			}
 
 		case 19://Tremembe
-
-																					
-
-																						if(ddt(162,57,257,152,293,9,x,y))
-
-																						{
-
-																							return 19;
-
-																						}
-
-																					
+			if(ddt(162,57,257,152,293,9,x,y))
+			{
+				return 19;
+			}
 
 		case 20://Vila Maria
-
-																						
-
-																							if(ddt(186,158,279,177,251,108,x,y))
-
-																							{
-
-																								return 20;
-
-																							}
-
-																						
+			if(ddt(186,158,279,177,251,108,x,y))
+			{
+				return 20;
+			}
 
 		case 21://Penha
-
-																							
-
-																								if(ddt(218,161,305,87,328,209,x,y))
-
-																								{
-
-																									return 21;
-
-																								}
-
-																							
+			if(ddt(218,161,305,87,328,209,x,y))
+			{
+				return 21;
+			}
 
 		case 22://Ermelino Matarazzo
-
-																								
-
-																									if(ddt(285,98,361,93,306,183,x,y))
-
-																									{
-
-																										return 22; 
-
-																									}
-
-																								
+			if(ddt(285,98,361,93,306,183,x,y))
+			{
+				return 22; 
+			}
 
 		case 23://Sao Miguel
-
-																									
-
-																										if(ddt(311,111,335,193,440,99,x,y))
-
-																										{
-
-																											return 23;
-
-																										}
-
-																									
+			if(ddt(311,111,335,193,440,99,x,y))
+			{
+				return 23;
+			}
 
 		case 24://Itaquera
-
-																										
-
-																											if(ddt(256,195,360,118,389,244,x,y))
-
-																											{
-
-																												return 24;
-
-																											}
-
-																										
+			if(ddt(256,195,360,118,389,244,x,y))
+			{
+				return 24;
+			}
 
 		case 25://Itaim
-
-																											
-
-																												if(ddt(399,101,433,157,333,169,x,y))
-
-																												{
-
-																													return 25;
-
-																												}
-
-																											
+			if(ddt(399,101,433,157,333,169,x,y))
+			{
+				return 25;
+			}
 
 		case 26://Guaianases
-
-																												
-
-																													
-
-																													if(ddt(404,140,398,201,342,182,x,y))
-
-																													{
-
-																														return 26;
-
-																													}
-
-																												
+			if(ddt(404,140,398,201,342,182,x,y))
+			{
+				return 26;
+			}
 
 		case 27://Cidade Tiradentes
-
-																													
-
-																														if(ddt(414,206,378,266,356,186,x,y))
-
-																														{
-
-																															return 27;
-
-																														}
-
-																													
+			if(ddt(414,206,378,266,356,186,x,y))
+			{
+				return 27;
+			}
 
 		case 28://Sao Matheus
-
-																														
-
-																															if(ddt(401,199,385,306,286,219,x,y))
-
-																															{
-
-																																return 28;
-
-																															}
-
-																														
+			if(ddt(401,199,385,306,286,219,x,y))
+			{
+				return 28;
+			}
 
 		case 29://Vila Prudente
-
-																															
-
-																																if(ddt(228,178,204,249,330,250,x,y))
-
-																																{
-
-																																	return 29;
-
-																																}
-
-																															
+			if(ddt(228,178,204,249,330,250,x,y))
+			{
+				return 29;
+			}
 
 		case 30://Aricanduva
-
-																																
-
-																																	if(ddt(251,148,234,212,312,218,x,y))
-
-																																	{
-
-																																		return 30;
-
-																																	}
-
-																																
+			if(ddt(251,148,234,212,312,218,x,y))
+			{
+				return 30;
+			}
 
 		case 31://Mooca
-
-																																	
-
-																																		if(ddt(179,143,273,153,239,231,x,y))
-
-																																		{
-
-																																			return 31;
-
-																																		}
-
+			if(ddt(179,143,273,153,239,231,x,y))
+			{
+				return 31;
+			}
 	}
 
 }
