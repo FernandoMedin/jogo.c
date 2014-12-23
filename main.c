@@ -1,14 +1,4 @@
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_image.h>
-#include <stdio.h>
 #include "funcoes_base.h"
-#include <math.h>
-#include <stdlib.h>
-#include <time.h>
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
-#include <allegro5/allegro_font.h>
-#include <allegro5/allegro_ttf.h>
 
 const int LARGURA_TELA = 800;
 const int ALTURA_TELA = 600;
